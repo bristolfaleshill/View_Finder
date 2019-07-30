@@ -26,6 +26,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="TC7-6f-cIz" kind="show" identifier="moveToDetail" id="S3C-XZ-7kh"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -107,6 +110,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="baW-Nw-Z7g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1378.2608695652175" y="50.892857142857139"/>
+        </scene>
+        <!--hello-->
+        <scene sceneID="fx9-9I-tz8">
+            <objects>
+                <viewController title="hello" id="TC7-6f-cIz" customClass="PhotoDetailViewController" customModule="ViewFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GVT-NB-uuM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xaS-gk-BOQ">
+                                <rect key="frame" x="37" y="158" width="340" height="292"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="kCk-Kb-vPC"/>
+                    </view>
+                    <connections>
+                        <outlet property="photoDetailDisplay" destination="xaS-gk-BOQ" id="BFd-oa-wlj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WIh-Hn-TzR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="460.86956521739131" y="803.57142857142856"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4sW-Zj-JwB">
